@@ -10,6 +10,7 @@
 ;Nothing needs to be translated after a semicolon.
 ;HELLO FOLKS, THIS IS MY CHANGE!
 ;AND THIS IS ANOTHER CHANGE!!!
+;AND ANOTHER!
 
 (def lines
   {;settings
