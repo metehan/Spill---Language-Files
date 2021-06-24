@@ -8,6 +8,7 @@
 ;be invisible to the software.
 ;semicolons are just for comments.
 ;Nothing needs to be translated after a semicolon.
+;HELLO FOLKS, THIS IS MY CHANGE!
 
 (def lines
   {;settings
