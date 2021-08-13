@@ -1,4 +1,4 @@
-(ns language.plpl)
+S(ns language.plpl)
 ;When you see "»" charachter in the source ignore text after "»"
 ;the character "»" indicates the context of the text.
 ;so "Balance»customer" means just "Balance" 
@@ -11,7 +11,7 @@
 
 (def lines
   {;settings
-   "General Settings" "Ustawienia"
+   "General Settings" "General Settings"
    "Brand Name" "Nazwa firmy" ; same as "Your company" below
    "Your company / brand name" "Nazwa firmy / nazwa handlowa"
    "Company invoice name" "Nazwa firmy na fakturze"
