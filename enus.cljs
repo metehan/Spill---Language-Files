@@ -1,4 +1,4 @@
-S(ns language.plpl)
+S(ns language.enus)
 ;When you see "»" charachter in the source ignore text after "»"
 ;the character "»" indicates the context of the text.
 ;so "Balance»customer" means just "Balance" 
@@ -12,95 +12,95 @@ S(ns language.plpl)
 (def lines
   {;settings
    "General Settings" "General Settings"
-   "Brand Name" "Nazwa firmy" ; same as "Your company" below
-   "Your company / brand name" "Nazwa firmy / nazwa handlowa"
-   "Company invoice name" "Nazwa firmy na fakturze"
-   "Tax Authority" "Organ podatkowy" ;  country-specific governmental entity which imposes taxes
-   "Tax Number" "Identyfikator podatkowy" ; this is company's Tax Identification Number which will be displayed in the invoice.
-   "Invoice Address" "Adres na fakturze"
+   "Brand Name" "Company Name"
+   "Your company / brand name" "Your company/brand's name"
+   "Company invoice name" "Name on Invoices"
+   "Tax Authority" "ax Authority"
+   "Tax Number" "Tax Number"
+   "Invoice Address" "Address on Invoices"
    "E-mail" "Email"
-   "City" "Województwo" ; region
-   "Town" "Miejscowość" ; city/town/village
-   "Company Location" "Siedziba firmy"
-   "Phones" "Telefony"
-   "Order Status" "Status zamówienia"
-   "Open" "Otwórz" ; as in: "Open this box to see inside."
-   "Kapalı" "Zamknij" ; as in: "Close this box."
-   "Customer Phones" "Telefony klientów"
-   "Hidden" "Ukryj" ; 
-   "Visible" "Pokaż"
-   "Sendind SMS" "Wysyłanie SMS"
-   "IVR Type" "Typ IVR"
-   "Not available" "Niedostępne"
-   "Repeating order" "Powtarzające się zamówienie"
-   "Product amount" "Ilość produktów"
-   "Language" "Język"
-   "Other Settings" "Ustawienia dodatkowe"
-   "User Accounts" "Konta użytkowników"
-   "Delivery Zones" "Rejony dostaw" ; these zones are listed below, make sure you use the same word for "zone"
-   "Brand Settings" "Ustawienia firmy"
-   "API Settings" "Ustawienia API"
-   "Telsam Settings" "Ustawienia Telsam" ; this is for Turkish version - just leave 'Telsam'
-   "SMS Contents" "Treść SMS"
+   "City" "Region"
+   "Town" "City"
+   "Company Location" "Company Location"
+   "Phones" "Phone Numbers"
+   "Order Status" "Accept Orders" ; ?
+   "Open" "Yes"
+   "Kapalı" "No"
+   "Customer Phones" "Customer Phones" ; ?
+   "Hidden" "Hidden"
+   "Visible" "Visible"
+   "Sendind SMS" "Sendind SMS"
+   "IVR Type" "IVR Type"
+   "Not available" "Not Available"
+   "Repeating order" "Repeating Order"
+   "Product amount" "Product Amount"
+   "Language" "Language"
+   "Other Settings" "Other Settings"
+   "User Accounts" "User Accounts"
+   "Delivery Zones" "Delivery Zones"
+   "Brand Settings" "Brand Settings"
+   "API Settings" "API Settings"
+   "Telsam Settings" "Telsam Settings"
+   "SMS Contents" "SMS Contents"
    ;settings.cljs/delivery areas
-   "Zone Name" "Nazwa rejonu" ; delivery zones
-   "All Subscribers" "Wszyscy abonenci"
-   "Red Zone" "Czerwony Rejon"
-   "Blue Zone" "Niebieski Rejon"
-   "Yellow Zone" "Żółty Rejon"
-   "Zone" "Rejon"
-   "Add" "Dodaj"
+   "Zone Name" "Zone Name" ; delivery zones
+   "All Subscribers" "All Subscribers"
+   "Red Zone" "Red Zone"
+   "Blue Zone" "Blue Zone"
+   "Yellow Zone" "Yellow Zone"
+   "Zone" "Zone"
+   "Add" "Add"
    ;"Delete" "Sil"
-   "All accounts without assigned delivery area will be automatically assigned to the first one." "Konta, którym nie przypisano rejonu dostawy, zostaną przypisane do pierwszego rejonu."
+   "All accounts without assigned delivery area will be automatically assigned to the first one." "All accounts without assigned delivery area will be automatically assigned to the first one."
 
    ;Right Column
-   "Workload" "Nakład pracy"
-   "Today's orders" "Dzisiejsze zamówienia"
-   "Scheduled" "Oczekujące" ; "Waiting Orders" - this is a list of fresh orders waiting to be completed
-   "Overdue" "Opóźnione" ; "Overdue Orders" - these are orders which are taking longer than normal to complete
-   "Completed" "Dostarczone" ; "Completed orders"
-   "User: " "Użytkownik: "
+   "Workload" "Workload"
+   "Today's orders" "Today's Orders"
+   "Scheduled" "Scheduled"
+   "Overdue" "Overdue"
+   "Completed" "Completed"
+   "User: " "User: "
 
    ;Navbar
    ;"User: " "Kullanıcı: "
-   "Restart the app" "Restartuj aplikację"
-   "Secure log-out" "Bezpieczne wylogowanie"
-   "Operation" "Działanie" ; ?
-   "New Account" "Nowe konto"
-   "Account" "Konto"
-   "Accounts" "Konta"
-   "All Accounts" "Wszystkie konta"
-   "Inventory" "Towary" ; all bottles, equipment, etc.
-   "Storages" "Magazyny" ; this is a place where a shop keeps their bottles & equipment, like a shop or a car
-   "Products" "Produkty"
-   "Carriers" "Dostawcy" ; the people who deliver waters
-   "Invoice" "Faktura"
-   "Accountancy" "Księgowość"
-   "Make a payment" "Przekaż kwotę" ; e.g. when a shop owner gives cash to the delivery man
-   "Get a payment" "Pobież kwotę"
-   "Reports" "Raporty" ; these are financial reports from Accountancy
+   "Restart the app" "Restart the App"
+   "Secure log-out" "Secure Logout"
+   "Operation" "Operations" ; ?
+   "New Account" "New Account"
+   "Account" "Account"
+   "Accounts" "Accounts"
+   "All Accounts" "All Accounts"
+   "Inventory" "Inventory"
+   "Storages" "Storages"
+   "Products" "Products"
+   "Carriers" "Carriers"
+   "Invoice" "Invoice"
+   "Accountancy" "Accountancy"
+   "Make a payment" "Make a Payment"
+   "Get a payment" "Get a Payment"
+   "Reports" "Raports"
 
    ;smartbox
-   "Search" "Szukaj"
-   "New Order" "Nowe zamówienie"
+   "Search" "Search"
+   "New Order" "New Order"
 
    ;order
-   "Unassigned" "Nieprzypisane"
-   "Debit" "Saldo ujemne" ; The left-hand side of an account or accounting ledger 
-   "Credit" "Saldo dodatnie" ; The right-hand side of an account or accounting ledger 
-   "Filters" "Filtry"
-   "My orders" "Moje zamówienia"
-   "Unassigned orders" "Nieprzypisane zamówienia"
-   "Hide delivered" "Ukryj dostarczone zamówienia"
-   "Show delviered" "Pokaż dostarczone zamówienia"
-   "Details" "Szczegóły"
+   "Unassigned" "Unassigned"
+   "Debit" "Debit" 
+   "Credit" "Credit"
+   "Filters" "Filters"
+   "My orders" "My Orders"
+   "Unassigned orders" "Unassigned Orders"
+   "Hide delivered" "Hide completed orders"
+   "Show delviered" "Show completed orders"
+   "Details" "Details"
    ;"Products" "Ürünler"
-   "Carrier" "Dostawca"
+   "Carrier" "Carrier"
    ;...
    ;"Account" "Abone"
-   "Schedule order" "Zaplanuj dostawę"
-   "Now" "Teraz"
-   "Order note" "Komentarz do zamówienia" ; a note in which you can comment on this delivery
+   "Schedule order" "Schedule Order"
+   "Now" "Now"
+   "Order note" "Comment"
    "Addition/Discount" "Dodatkowa opłata/Rabat"
    "Total: " "Suma: "
    "Save" "Zapisz"
